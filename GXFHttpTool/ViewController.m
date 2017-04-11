@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "GXFHttpTool.h"
+#import <UIImageView+WebCache.h>
+#import "GXFView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet GXFView *roundView;
 
 @end
 
@@ -16,7 +21,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+//    [GXFHttpTool getWithPath:@"http://www.who.int/entity/campaigns/immunization-week/2015/large-web-banner.jpg?ua=1" params:nil success:^(id json) {
+//        
+//        self.iconView.image = [UIImage imageWithData:json];
+//        
+//    } failure:^(NSError *error) {
+//        
+//        NSLog(@"%@", error);
+//    }];
+    
+    
+    [GXFHttpTool downLoadWithPath:@"http://www.who.int/entity/campaigns/immunization-week/2015/large-web-banner.jpg?ua=1" success:^(id json) {
+        
+        NSLog(@"%@", json);
+        self.iconView.image = [UIImage imageWithContentsOfFile:json];
+        
+    } failure:^(NSError *error) {
+        
+        NSLog(@"%@", error);
+        
+    } progress:^(CGFloat progress) {
+        
+        NSLog(@"%f", progress);
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            
+            self.roundView.progress = progress;
+        });
+        
+    }];
+    
+//    NSURL *URL = [NSURL URLWithString:@"http://pic9.nipic.com/20100904/4845745_195609329636_2.jpg"];
+//    [self.iconView sd_setImageWithURL:URL];
 }
 
 

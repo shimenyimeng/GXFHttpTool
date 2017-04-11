@@ -13,9 +13,15 @@
 		D9441C6C1E9C70B90091E1B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9441C6A1E9C70B90091E1B3 /* Main.storyboard */; };
 		D9441C6E1E9C70B90091E1B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9441C6D1E9C70B90091E1B3 /* Assets.xcassets */; };
 		D9441C711E9C70B90091E1B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9441C6F1E9C70B90091E1B3 /* LaunchScreen.storyboard */; };
+		D9441C7A1E9C70E40091E1B3 /* GXFHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9441C791E9C70E40091E1B3 /* GXFHttpTool.m */; };
+		D9441C801E9C8EA00091E1B3 /* GXFView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9441C7F1E9C8EA00091E1B3 /* GXFView.m */; };
+		DF3A995FC3185CA7CB8B4D14 /* libPods-GXFHttpTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB9726AF16E743073F35E14 /* libPods-GXFHttpTool.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EB9726AF16E743073F35E14 /* libPods-GXFHttpTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GXFHttpTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8BD1096B019065FCED41A8E /* Pods-GXFHttpTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXFHttpTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GXFHttpTool/Pods-GXFHttpTool.debug.xcconfig"; sourceTree = "<group>"; };
+		C7C78305325F7CF4E1E91D6E /* Pods-GXFHttpTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXFHttpTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-GXFHttpTool/Pods-GXFHttpTool.release.xcconfig"; sourceTree = "<group>"; };
 		D9441C5E1E9C70B90091E1B3 /* GXFHttpTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXFHttpTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9441C621E9C70B90091E1B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9441C641E9C70B90091E1B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		D9441C6D1E9C70B90091E1B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9441C701E9C70B90091E1B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9441C721E9C70B90091E1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9441C781E9C70E40091E1B3 /* GXFHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXFHttpTool.h; sourceTree = "<group>"; };
+		D9441C791E9C70E40091E1B3 /* GXFHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXFHttpTool.m; sourceTree = "<group>"; };
+		D9441C7E1E9C8EA00091E1B3 /* GXFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXFView.h; sourceTree = "<group>"; };
+		D9441C7F1E9C8EA00091E1B3 /* GXFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXFView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF3A995FC3185CA7CB8B4D14 /* libPods-GXFHttpTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47CE51F34D94CEF5842B096D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8BD1096B019065FCED41A8E /* Pods-GXFHttpTool.debug.xcconfig */,
+				C7C78305325F7CF4E1E91D6E /* Pods-GXFHttpTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62FEAFB756E0F12D2B45BC0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EB9726AF16E743073F35E14 /* libPods-GXFHttpTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9441C551E9C70B90091E1B3 = {
 			isa = PBXGroup;
 			children = (
 				D9441C601E9C70B90091E1B3 /* GXFHttpTool */,
 				D9441C5F1E9C70B90091E1B3 /* Products */,
+				47CE51F34D94CEF5842B096D /* Pods */,
+				62FEAFB756E0F12D2B45BC0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +92,10 @@
 				D9441C651E9C70B90091E1B3 /* AppDelegate.m */,
 				D9441C671E9C70B90091E1B3 /* ViewController.h */,
 				D9441C681E9C70B90091E1B3 /* ViewController.m */,
+				D9441C781E9C70E40091E1B3 /* GXFHttpTool.h */,
+				D9441C791E9C70E40091E1B3 /* GXFHttpTool.m */,
+				D9441C7E1E9C8EA00091E1B3 /* GXFView.h */,
+				D9441C7F1E9C8EA00091E1B3 /* GXFView.m */,
 				D9441C6A1E9C70B90091E1B3 /* Main.storyboard */,
 				D9441C6D1E9C70B90091E1B3 /* Assets.xcassets */,
 				D9441C6F1E9C70B90091E1B3 /* LaunchScreen.storyboard */,
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9441C751E9C70B90091E1B3 /* Build configuration list for PBXNativeTarget "GXFHttpTool" */;
 			buildPhases = (
+				7DA339E4F704781543FC5F97 /* [CP] Check Pods Manifest.lock */,
 				D9441C5A1E9C70B90091E1B3 /* Sources */,
 				D9441C5B1E9C70B90091E1B3 /* Frameworks */,
 				D9441C5C1E9C70B90091E1B3 /* Resources */,
+				5E3AE29E2AC6BD9B47A52B3E /* [CP] Embed Pods Frameworks */,
+				4CD379D865F04869E1339434 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +182,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CD379D865F04869E1339434 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GXFHttpTool/Pods-GXFHttpTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E3AE29E2AC6BD9B47A52B3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GXFHttpTool/Pods-GXFHttpTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DA339E4F704781543FC5F97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D9441C5A1E9C70B90091E1B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -153,6 +238,8 @@
 				D9441C691E9C70B90091E1B3 /* ViewController.m in Sources */,
 				D9441C661E9C70B90091E1B3 /* AppDelegate.m in Sources */,
 				D9441C631E9C70B90091E1B3 /* main.m in Sources */,
+				D9441C801E9C8EA00091E1B3 /* GXFView.m in Sources */,
+				D9441C7A1E9C70E40091E1B3 /* GXFHttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +355,7 @@
 		};
 		D9441C761E9C70B90091E1B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8BD1096B019065FCED41A8E /* Pods-GXFHttpTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GXFHttpTool/Info.plist;
@@ -279,6 +367,7 @@
 		};
 		D9441C771E9C70B90091E1B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7C78305325F7CF4E1E91D6E /* Pods-GXFHttpTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GXFHttpTool/Info.plist;
@@ -307,6 +396,7 @@
 				D9441C771E9C70B90091E1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
