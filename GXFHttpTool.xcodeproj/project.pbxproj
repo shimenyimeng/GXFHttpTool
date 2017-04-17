@@ -15,6 +15,7 @@
 		D9441C711E9C70B90091E1B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9441C6F1E9C70B90091E1B3 /* LaunchScreen.storyboard */; };
 		D9441C7A1E9C70E40091E1B3 /* GXFHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D9441C791E9C70E40091E1B3 /* GXFHttpTool.m */; };
 		D9441C801E9C8EA00091E1B3 /* GXFView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9441C7F1E9C8EA00091E1B3 /* GXFView.m */; };
+		D9DA9E401EA5075900162A52 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DA9E3F1EA5075900162A52 /* UIImageView+SDWebImage.m */; };
 		DF3A995FC3185CA7CB8B4D14 /* libPods-GXFHttpTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB9726AF16E743073F35E14 /* libPods-GXFHttpTool.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 		D9441C791E9C70E40091E1B3 /* GXFHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXFHttpTool.m; sourceTree = "<group>"; };
 		D9441C7E1E9C8EA00091E1B3 /* GXFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXFView.h; sourceTree = "<group>"; };
 		D9441C7F1E9C8EA00091E1B3 /* GXFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXFView.m; sourceTree = "<group>"; };
+		D9DA9E3E1EA5075900162A52 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		D9DA9E3F1EA5075900162A52 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				D9441C681E9C70B90091E1B3 /* ViewController.m */,
 				D9441C781E9C70E40091E1B3 /* GXFHttpTool.h */,
 				D9441C791E9C70E40091E1B3 /* GXFHttpTool.m */,
+				D9DA9E3E1EA5075900162A52 /* UIImageView+SDWebImage.h */,
+				D9DA9E3F1EA5075900162A52 /* UIImageView+SDWebImage.m */,
 				D9441C7E1E9C8EA00091E1B3 /* GXFView.h */,
 				D9441C7F1E9C8EA00091E1B3 /* GXFView.m */,
 				D9441C6A1E9C70B90091E1B3 /* Main.storyboard */,
@@ -147,6 +152,7 @@
 				TargetAttributes = {
 					D9441C5D1E9C70B90091E1B3 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YF5P95RLXZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -237,6 +243,7 @@
 			files = (
 				D9441C691E9C70B90091E1B3 /* ViewController.m in Sources */,
 				D9441C661E9C70B90091E1B3 /* AppDelegate.m in Sources */,
+				D9DA9E401EA5075900162A52 /* UIImageView+SDWebImage.m in Sources */,
 				D9441C631E9C70B90091E1B3 /* main.m in Sources */,
 				D9441C801E9C8EA00091E1B3 /* GXFView.m in Sources */,
 				D9441C7A1E9C70E40091E1B3 /* GXFHttpTool.m in Sources */,
@@ -358,7 +365,9 @@
 			baseConfigurationReference = B8BD1096B019065FCED41A8E /* Pods-GXFHttpTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YF5P95RLXZ;
 				INFOPLIST_FILE = GXFHttpTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guxuefei.GXFHttpTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +379,9 @@
 			baseConfigurationReference = C7C78305325F7CF4E1E91D6E /* Pods-GXFHttpTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YF5P95RLXZ;
 				INFOPLIST_FILE = GXFHttpTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = guxuefei.GXFHttpTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
